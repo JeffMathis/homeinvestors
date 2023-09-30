@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hahmlet', serif;
+
+    --primary-color: #003366;
+    --neutral-color: #CCCCCC;
+    --accent-color: #008080;
+    --complimentary-color: #FF7034;
+}
+
+.heading {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 3rem;
+}
+
+.contact-us {
+    border: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 0 .5rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.contact-us input {
+    border: none;
+    border-bottom: 2px solid hsla(0, 0%, 0%, 0.24);
+    margin-top: 3rem;
+    font-size: large;
+    width: 100%;
+}
+
+.contact-us h2 {
+    text-align: left;
+}
+
+.personal-info {
+    margin-top: 2rem;
+}
+
+#submit{
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    background-color: var(--complimentary-color);
+    color: black;
+    font-weight: bolder;
+    width: max-content;
+    padding: 1rem;
+}
+
+.terms {
+    text-align: left;
+    display: flex;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+.terms input {
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 750px) {
+
+    form {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        gap: 1rem;
+        align-items: end;
+    }
+
+    .contact-us {
+        margin: 0 3rem;
+    }
+
+    .address {
+        order: -1;
+    }
+
+    .submit-wrapper {
+        grid-column: 1 / span 2;
+    }
+
+    .terms input {
+        padding: 0;
+        width: 10%;
+        margin-left: 2rem;
+    }
+
+
+
+}
